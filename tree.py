@@ -34,15 +34,15 @@ def draw_tree(l, level):
   t.fd(l)
 
   if level < lv:
-  draw_tree(l, level + 1)
-  t.bk(l)
-  t.rt(2 * s)
-  t.fd(l)
+    draw_tree(l, level + 1)
+    t.bk(l)
+    t.rt(2 * s)
+    t.fd(l)
   t.color(random.choice(colors))
   if level < lv:
-  draw_tree(l, level + 1)
-  t.bk(l)
-  t.lt(s)
+    draw_tree(l, level + 1)
+    t.bk(l)
+    t.lt(s)
 
   t.width(width) # restore the previous pen width
 
@@ -52,11 +52,11 @@ draw_tree(l, 2)
 
 def draw_square(zach):
   for i in range(1,7):
-  zach.forward(50)
-  zach.right(90)
-  zach.left(750)
-  zach.forward(50) 
-  def draw_art(): 
+    zach.forward(50)
+    zach.right(90)
+    zach.left(750)
+    zach.forward(50) 
+def draw_art(): 
   #Create the turtle zach - draws a square
   zach = turtle.Turtle()
   zach.hideturtle()
@@ -67,9 +67,9 @@ def draw_square(zach):
   zach.shape("arrow")
   zach.speed(12)
   for i in range (1,73):
-  zach.color(random.choice(colors))
-  draw_square(zach)
-  zach.right(5)
+    zach.color(random.choice(colors))
+    draw_square(zach)
+    zach.right(5)
   #Create the turtle angie - draws a circle
   angie = turtle.Turtle()
   angie.hideturtle()
@@ -82,9 +82,9 @@ def draw_square(zach):
   angie.circle(70)
   angie.speed(11)
   for i in range (1,73):
-  angie.circle(70)
-  angie.right(5)
-  #Creat the turtle jane - draws a circle
+    angie.circle(70)
+    angie.right(5)
+  #Create the turtle jane - draws a circle
   jane = turtle.Turtle()
   jane.hideturtle()
   jane.penup()
@@ -96,8 +96,8 @@ def draw_square(zach):
   jane.circle(50)
   jane.speed(11)
   for i in range (1,73):
-  jane.circle(50)
-  jane.right(5)
+    jane.circle(50)
+    jane.right(5)
 
 draw_art()
 
